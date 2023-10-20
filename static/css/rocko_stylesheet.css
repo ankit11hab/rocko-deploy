@@ -18,12 +18,7 @@ body {
     height: 8vh;
 
 }
-.alcher_logo img{
- 
-    height: 5vh;
-    max-width: none;
-
-}
+.
 .alcher_logo{
     position: absolute;
     height: 5vh;
@@ -278,15 +273,15 @@ background-color: #0E0E0E;
     background-position: 0% 7vw;
 }
 
-#about-heading {
+#about-heading_wide {
     font-size: 2vw;
-    padding: 7vw 12vw 5vw 12vw;
+    padding: 10vw 12vw 5vw 20vw;
     width: auto;
     height: fit-content;
     background-image:url("../images/Vector3.png")  ;
     background-repeat: no-repeat;
-    background-position: 99%;
-    background-size: contain;
+    background-position: 100%;
+    background-size: 28vw;
 }
 
 #about-main-heading {
@@ -296,7 +291,8 @@ background-color: #0E0E0E;
 }
 
 #about-details {
-    text-align: center;
+    text-align:left;
+    padding-left:0vh;
     font-size: 1.5vw;
 }
 
@@ -326,22 +322,90 @@ background-color: #0E0E0E;
         display: block;
         background-image:url("../images/Vector3.png")  ;
         background-repeat: no-repeat;
-        background-size: 20%;
+        background-size: 3%;
         background-position: 99% 6%;
-        padding-bottom: 8vw;
+        padding-bottom: 10vw;
     }
 
     #about-heading {
+
         background-image: none;
         background-repeat: no-repeat;
         background-position: 90% 130%;
     }
+    }
+    .main-slider{
+    display:flex;
+background-color:#0E0E0E;
+
+    }
+.slider{
+
+position:relative;
+width:100%;
+background-color:#0E0E0E;
+display:grid;
+padding-right:0;
+padding-left:0;
+
+overflow:hidden;
 }
+.slide-track{
+display:flex;
+width:calc(22vw*4);
+animation:move-rtl 8s linear infinite;
+}
+@keyframes move-rtl {
+0%{
+transform:translateX(0);
+
+}
+100%{
+transform:translateX(calc(-100%));
+}
+}
+
+.slide{
+height:25vw;
+width:35vw;
+display:flex;
+
+padding:2vw;
+
+}
+.img{
+width:5vw;;
+height:5vw;
+align-items:center;
+}
+.border1{
+position:relative;
+left:0;
+height:25vw;
+width:8%;
+background-image:linear-gradient(to left ,rgba(255,255,255,0)0%,rgba(255,255,255,1)100%);
+z-index:2;
+}
+.border2{
+position:relative;
+ left:87%;
+height:25vw;
+width:8%;
+background-image:linear-gradient(to right ,rgba(255,255,255,0)0%,rgba(255,255,255,1)100%);
+z-index:2;
+}
+
 
 #contact_us {
     font-family: 'Poppins';
     background-color: #0E0E0E;
     color: #C6B394;
+    background-image:url("../images/contact.png");
+     background-repeat: no-repeat;
+      background-size: 12vw;
+      background-position:17% 35%;
+
+
 }
 
 #contact_us_wide {
@@ -355,7 +419,8 @@ background-color: #0E0E0E;
     background-size: contain;
 }
 
-#contact-heading {
+
+#contact-heading-wide{
     font-size: 1.7vw;
     padding: 7vw 12vw 5vw 12vw;
     width: auto;
@@ -366,9 +431,13 @@ background-color: #0E0E0E;
 }
 
 #contact-main-heading {
-    border-left: 0.5vw solid #711011;
     padding-left: 2.8%;
     margin-bottom: 5%;
+    height:25vw;
+    background-image:url("../images/Frame.png")  ;
+    background-repeat: no-repeat;
+    background-size:35vw;
+    background-position: right ;
 }
 
 #contact-images {
@@ -376,11 +445,12 @@ background-color: #0E0E0E;
     flex-flow: row;
     padding-left: 30vw;
     padding-bottom: 8vw;
-    background-image:url("../images/drums.png")  ;
-    background-repeat: no-repeat;
-    background-size: 25vw;
-    background-position: 0vw 6vw;
+
 }
+
+
+
+
 
 #footer {
     height: 6vw;
@@ -400,14 +470,15 @@ background-color: #0E0E0E;
     flex-direction: row;
     align-items: center;
 }
-#mobile-footer{
-    display: none;
-}
+
 
 #contact-us-mobile {
     display: none;
 }
+#mobile-footer{
+display:none;
 
+}
 @media (max-width: 580px) {
 
     #footer{
@@ -415,16 +486,30 @@ background-color: #0E0E0E;
     }
     #contact-heading {
         font-size: 2vw;
-        margin-bottom: 5vw;
+        margin-bottom: 30vw;
+        padding-top:5vw;
+        height:28vw;
+    background-image:url("../images/Frame.png")  ;
+    background-repeat: no-repeat;
+    background-size:25vw;
+    background-position: right ;
     }
 
     #contact_us_wide {
         display: none;
     }
-
+#contact_us{
+background-size:15vw;
+background-position:7% 22%;
+background-color:#0E0E0E;
+}
     #contact-us-mobile {
+
+        height:60vw;
         display: block;
-        padding-top: 7vw;
+        padding-top: 5vw;
+        padding-bottom:2vw;
+        padding-left:0;
     }
 
     #mobile-img-contact {
