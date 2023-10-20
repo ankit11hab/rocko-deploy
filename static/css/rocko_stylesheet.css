@@ -18,12 +18,7 @@ body {
     height: 8vh;
 
 }
-.alcher_logo img{
- 
-    height: 5vh;
-    max-width: none;
-
-}
+.
 .alcher_logo{
     position: absolute;
     height: 5vh;
@@ -280,13 +275,13 @@ background-color: #0E0E0E;
 
 #about-heading {
     font-size: 2vw;
-    padding: 7vw 12vw 5vw 12vw;
+    padding: 10vw 12vw 5vw 20vw;
     width: auto;
     height: fit-content;
     background-image:url("../images/Vector3.png")  ;
     background-repeat: no-repeat;
-    background-position: 99%;
-    background-size: contain;
+    background-position: 100%;
+    background-size: 28vw;
 }
 
 #about-main-heading {
@@ -296,7 +291,8 @@ background-color: #0E0E0E;
 }
 
 #about-details {
-    text-align: center;
+    text-align:left;
+    padding-left:0vh;
     font-size: 1.5vw;
 }
 
@@ -326,9 +322,9 @@ background-color: #0E0E0E;
         display: block;
         background-image:url("../images/Vector3.png")  ;
         background-repeat: no-repeat;
-        background-size: 20%;
+        background-size: 3%;
         background-position: 99% 6%;
-        padding-bottom: 8vw;
+        padding-bottom: 15vw;
     }
 
     #about-heading {
@@ -366,9 +362,13 @@ background-color: #0E0E0E;
 }
 
 #contact-main-heading {
-    border-left: 0.5vw solid #711011;
     padding-left: 2.8%;
     margin-bottom: 5%;
+    height:25vw;
+    background-image:url("../images/Frame.png")  ;
+    background-repeat: no-repeat;
+    background-size:35vw;
+    background-position: right ;
 }
 
 #contact-images {
@@ -376,10 +376,7 @@ background-color: #0E0E0E;
     flex-flow: row;
     padding-left: 30vw;
     padding-bottom: 8vw;
-    background-image:url("../images/drums.png")  ;
-    background-repeat: no-repeat;
-    background-size: 25vw;
-    background-position: 0vw 6vw;
+
 }
 
 #footer {
