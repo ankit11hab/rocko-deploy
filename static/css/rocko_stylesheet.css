@@ -18,12 +18,7 @@ body {
     height: 8vh;
 
 }
-.alcher_logo img{
- 
-    height: 5vh;
-    max-width: none;
-
-}
+.
 .alcher_logo{
     position: absolute;
     height: 5vh;
@@ -271,32 +266,38 @@ background-color: #0E0E0E;
 }
 
 #about_us_wide {
+height : 40vw;
     display: block;
-    background-image:url("../images/Vector2.png")  ;
+    background-image:url("../images/rocko.svg")  ;
     background-repeat: no-repeat;
-    background-size: 43% 89%;
-    background-position: 0% 7vw;
+    background-size: 70% 100%;
+    background-position: 165% 0vw;
+    background-color:#0E0E0E;
+
 }
 
-#about-heading {
+#about-heading_wide {
     font-size: 2vw;
-    padding: 7vw 12vw 5vw 12vw;
+    padding: 10vw 12vw 5vw 20vw;
     width: auto;
     height: fit-content;
     background-image:url("../images/Vector3.png")  ;
     background-repeat: no-repeat;
-    background-position: 99%;
-    background-size: contain;
+    background-position: 100%;
+    background-size: 28vw;
 }
 
 #about-main-heading {
-    border-left: 0.8vw solid #711011;
-    padding-left: 2.8%;
+    border-bottom: 0.3vw solid #711011;
+    padding-left: 0;
+    margin-right:78%;
     margin-bottom: 5%;
+    margin-left:0%;
 }
 
 #about-details {
-    text-align: center;
+    text-align:left;
+    padding-left:0vh;
     font-size: 1.5vw;
 }
 
@@ -324,38 +325,149 @@ background-color: #0E0E0E;
 
     #about-us-mobile {
         display: block;
+
         background-image:url("../images/Vector3.png")  ;
         background-repeat: no-repeat;
-        background-size: 20%;
+        background-size: 3%;
         background-position: 99% 6%;
-        padding-bottom: 8vw;
+        padding-bottom: 4vw;
     }
 
     #about-heading {
+
         background-image: none;
         background-repeat: no-repeat;
         background-position: 90% 130%;
     }
+    }
+.gallery-main{
+background-color:#0E0E0E;
+
+}
+
+    .main-slider{
+    display:flex;
+background-color:#0E0E0E;
+
+    }
+.slider{
+
+position:relative;
+width:90%;
+background-color:#0E0E0E;
+display:grid;
+margin-right:12vw;
+margin-left:0vw;
+
+overflow:hidden;
+}
+.slide-track{
+display:flex;
+width:calc(22vw*4);
+animation:move-rtl 10s linear infinite;
+}
+@keyframes move-rtl {
+0%{
+transform:translateX(0);
+
+}
+100%{
+transform:translateX(calc(-100%));
+}
+}
+
+.slide{
+height:18vw;
+width:28vw;
+display:flex;
+z-index:1;
+margin:2vw;
+
+}
+.sec1{
+border:1vw solid #711011;
+}
+.sec2{
+border:1vw solid #C6B394;
+}
+.img{
+width:5vw;;
+height:5vw;
+align-items:center;
+}
+.border1{
+position:relative;
+left:13%;
+height:25vw;
+width:8%;
+background-image:linear-gradient(to left ,rgba(0,0,0,0)0%,rgba(14,14,14,1)100%);
+z-index:2;
+}
+.border2{
+position:relative;
+ left:75%;
+height:25vw;
+width:8%;
+background-image:linear-gradient(to right ,rgba(0,0,0,0)0%,rgba(14,14,14,1)100%);
+z-index:2;
+}
+ #gallery{
+     font-family: 'Poppins';
+    background-color: #0E0E0E;
+    color: #C6B394;
+    padding-bottom: 4vw;
+    border-bottom: 0.3vw solid #711011;
+    margin-left: 19%;
+    margin-right:69%;
+    padding-left:0vw;
+    margin-bottom: 5%;
+height:5vw;
+
+     }
+
+@media (max-width: 760px){
+#gallery{
+padding-left:3vw;
+margin-left:0;
+padding-bottom:0;
+ margin-bottom :2%;
+ border-left: 1vw solid #711011;
+ border-bottom:none;
+}
+}
+#contact-main {
+    background-image:url("../images/left-skull1.svg")  ;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: contain;
+    z-index:-1
+    display:flex;
+
 }
 
 #contact_us {
     font-family: 'Poppins';
     background-color: #0E0E0E;
     color: #C6B394;
-}
+    background-image:url("../images/contact.png");
+     background-repeat: no-repeat;
+      background-size: 11vw;
+      background-position:23% 47%;
 
+
+}
+#contact-text{
+font-size:1.5vw;
+margin-left:27%;
+margin-top:5%
+}
 #contact_us_wide {
     display: block;
 }
 
-#contact-main {
-    background-image:url("../images/left-skull1.svg")  ;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: contain;
-}
 
-#contact-heading {
+
+#contact-heading-wide{
     font-size: 1.7vw;
     padding: 7vw 12vw 5vw 12vw;
     width: auto;
@@ -366,9 +478,20 @@ background-color: #0E0E0E;
 }
 
 #contact-main-heading {
-    border-left: 0.5vw solid #711011;
     padding-left: 2.8%;
     margin-bottom: 5%;
+    height:25vw;
+    background-image:url("../images/Frame.png")  ;
+    background-repeat: no-repeat;
+    background-size:35vw;
+    background-position: right ;
+}
+#c-heading{
+border-bottom: 0.3vw solid #711011;
+margin-left:5%;
+margin-right:68%;
+
+padding-left:0vw;
 }
 
 #contact-images {
@@ -376,11 +499,12 @@ background-color: #0E0E0E;
     flex-flow: row;
     padding-left: 30vw;
     padding-bottom: 8vw;
-    background-image:url("../images/drums.png")  ;
-    background-repeat: no-repeat;
-    background-size: 25vw;
-    background-position: 0vw 6vw;
+
 }
+
+
+
+
 
 #footer {
     height: 6vw;
@@ -400,34 +524,59 @@ background-color: #0E0E0E;
     flex-direction: row;
     align-items: center;
 }
-#mobile-footer{
-    display: none;
-}
+
 
 #contact-us-mobile {
     display: none;
 }
+#mobile-footer{
+display:none;
 
-@media (max-width: 580px) {
+}
+@media (max-width: 760px) {
 
     #footer{
         display: none;
     }
     #contact-heading {
+     font-family: 'Poppins';
         font-size: 2vw;
-        margin-bottom: 5vw;
+        margin-bottom: 30vw;
+        padding-top:2vw;
+        height:28vw;
+            color: #C6B394;
+    background-image:url("../images/Frame.png")  ;
+    background-repeat: no-repeat;
+    background-size:25vw;
+    background-position: right ;
     }
-
+#contact-mobile-text{
+margin-left:32%;
+margin-top: 5%;
+font-size:2.4vw;}
     #contact_us_wide {
         display: none;
     }
-
+#contact_us{
+background-size:15vw;
+background-position:7% 22%;
+background-color:#0E0E0E;
+}
     #contact-us-mobile {
+background-color:#0E0E0E;
+        height:50vw;
         display: block;
-        padding-top: 7vw;
+        padding-top: 2vw;
+        padding-bottom:2vw;
+        padding-left:0;
+         background-image:url("../images/contact.png");
+     background-repeat: no-repeat;
+      background-size: 15vw;
+      background-position:15% 39%;
     }
 
     #mobile-img-contact {
+    height:50vw;
         padding-top: 15vw;
         background-image: url('../images/left-skull1.svg'), url('../images/right-skull.png');
         background-repeat: no-repeat;
